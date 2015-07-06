@@ -31,3 +31,7 @@
   'alt-f2': 'bookmarks:view-all'
   'f2': 'bookmarks:jump-to-next-bookmark'
   'shift-f2': 'bookmarks:jump-to-previous-bookmark'
+
+  # Sort Lines (Requires "sort-lines")
+  'f9': 'sort-lines:case-insensitive-sort'
+  'ctrl-f9': 'sort-lines:sort'
