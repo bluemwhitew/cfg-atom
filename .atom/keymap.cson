@@ -23,3 +23,10 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
+
+'atom-text-editor':
+  'ctrl-f2': 'bookmarks:toggle-bookmark'
+  'ctrl-shift-f2': 'bookmarks:clear-bookmarks'
+  'alt-f2': 'bookmarks:view-all'
+  'f2': 'bookmarks:jump-to-next-bookmark'
+  'shift-f2': 'bookmarks:jump-to-previous-bookmark'
