@@ -2,3 +2,12 @@
   welcome:
     showOnStartup: false
   core: {}
+  editor:
+    autoIndent: true
+    invisibles:
+      cr: false
+      eol: false
+    showInvisibles: true
+    showIndentGuide: false
+    showLineNumbers: true
+    tabLength: 2
