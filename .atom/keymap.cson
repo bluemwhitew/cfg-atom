@@ -35,3 +35,7 @@
   # Sort Lines (Requires "sort-lines")
   'f9': 'sort-lines:case-insensitive-sort'
   'ctrl-f9': 'sort-lines:sort'
+
+# Emmet Support for PHP (Requires "emmet")
+'atom-text-editor[data-grammar="text html php"]:not([mini])':
+  'tab': 'emmet:expand-abbreviation-with-tab'
