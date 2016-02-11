@@ -30,3 +30,7 @@
   'Magento: Get Skin URL (Secure)':
     'prefix': 'getSkinUrlSecure'
     'body': '<?php echo $this->getSkinUrl(\'$0\', array(\'_secure\' => true); ?>'
+
+  'Magento: Get Store Configuration':
+    'prefix': 'getStoreConfig'
+    'body': '<?php echo Mage::getStoreConfig(\'${0:general/store_information/phone}\'); ?>'
