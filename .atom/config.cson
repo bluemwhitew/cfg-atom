@@ -1,17 +1,17 @@
 "*":
-  welcome:
-    showOnStartup: false
   core: {}
   editor:
     autoIndent: true
     invisibles:
       cr: false
       eol: false
-    showInvisibles: true
     showIndentGuide: false
+    showInvisibles: true
     showLineNumbers: true
     tabLength: 2
     tabType: "soft"
+  welcome:
+    showOnStartup: false
   whitespace:
     ensureSingleTrailingNewline: true
     removeTrailingWhitespace: true
