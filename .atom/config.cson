@@ -11,6 +11,7 @@
     showIndentGuide: false
     showLineNumbers: true
     tabLength: 2
+    tabType: "soft"
   whitespace:
     ensureSingleTrailingNewline: true
     removeTrailingWhitespace: true
