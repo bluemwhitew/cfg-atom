@@ -25,6 +25,9 @@
 # https://github.com/bevry/cson#what-is-cson
 
 'atom-text-editor':
+  # Default
+  'alt-f': 'unset!' # 'editor:move-to-end-of-word'
+
   # Bookmarks
   'ctrl-f2': 'bookmarks:toggle-bookmark'
   'ctrl-shift-f2': 'bookmarks:clear-bookmarks'
