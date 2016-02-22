@@ -34,3 +34,7 @@
   'Magento: Get Store Configuration':
     'prefix': 'getStoreConfig'
     'body': '<?php echo Mage::getStoreConfig(\'${1:general}/${2:store_information}/${3:phone}\'); ?>$4'
+
+  'Magento: Check Module Status':
+    'prefix': 'isModuleEnabled'
+    'body': '<?php if (Mage::helper(\'core\')->isModuleEnabled(\'${1:Fishpig_Wordpress}\')): ?>$2<?php endif; ?>'
