@@ -23,6 +23,10 @@
     'prefix': 'this'
     'body': '<?php echo $this->__(\'$0\'); ?>'
 
+  'Magento: Get Current URL':
+    'prefix': 'getCurrentUrl'
+    'body': '<?php echo Mage::helper(\'core/url\')->getCurrentUrl(); ?>'
+
   'Magento: Get Skin URL':
     'prefix': 'getSkinUrl'
     'body': '<?php echo $this->getSkinUrl(\'$0\'); ?>'
