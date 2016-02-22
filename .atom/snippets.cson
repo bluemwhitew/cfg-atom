@@ -33,4 +33,4 @@
 
   'Magento: Get Store Configuration':
     'prefix': 'getStoreConfig'
-    'body': '<?php echo Mage::getStoreConfig(\'${0:general/store_information/phone}\'); ?>'
+    'body': '<?php echo Mage::getStoreConfig(\'${1:general}/${2:store_information}/${3:phone}\'); ?>$4'
