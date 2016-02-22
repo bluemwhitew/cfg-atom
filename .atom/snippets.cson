@@ -42,3 +42,7 @@
   'Magento: Check Module Status':
     'prefix': 'isModuleEnabled'
     'body': '<?php if (Mage::helper(\'core\')->isModuleEnabled(\'${1:Fishpig_Wordpress}\')): ?>$2<?php endif; ?>'
+
+  'Magento: Log':
+    'prefix': 'log'
+    'body': '<?php Mage::log(\'${1:The cake is a lie...}\', Zend_Log::INFO, \'${2:rattmann}.log\'); ?>$3'
