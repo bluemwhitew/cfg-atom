@@ -23,10 +23,26 @@
     'prefix': 'this'
     'body': '<?php echo $this->__(\'$0\'); ?>'
 
+  'Magento: Get Current URL':
+    'prefix': 'getCurrentUrl'
+    'body': '<?php echo Mage::helper(\'core/url\')->getCurrentUrl(); ?>'
+
   'Magento: Get Skin URL':
     'prefix': 'getSkinUrl'
-    'body': '<?php echo $this->getSkinUrl(\'$0\'); ?>'
+    'body': '<?php echo $this->getSkinUrl(\'${1:images}/${2:aperture-science-logo.png}\'); ?>$3'
 
   'Magento: Get Skin URL (Secure)':
     'prefix': 'getSkinUrlSecure'
-    'body': '<?php echo $this->getSkinUrl(\'$0\', array(\'_secure\' => true); ?>'
+    'body': '<?php echo $this->getSkinUrl(\'${1:images}/${2:aperture-science-logo.png}\', array(\'_secure\' => ${3:true}); ?>$4'
+
+  'Magento: Get Store Configuration':
+    'prefix': 'getStoreConfig'
+    'body': '<?php echo Mage::getStoreConfig(\'${1:general}/${2:store_information}/${3:phone}\'); ?>$4'
+
+  'Magento: Check Module Status':
+    'prefix': 'isModuleEnabled'
+    'body': '<?php if (Mage::helper(\'core\')->isModuleEnabled(\'${1:Fishpig_Wordpress}\')): ?>$2<?php endif; ?>'
+
+  'Magento: Log':
+    'prefix': 'log'
+    'body': '<?php Mage::log(\'${1:The cake is a lie...}\', Zend_Log::INFO, \'${2:rattmann}.log\'); ?>$3'
