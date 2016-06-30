@@ -23,6 +23,18 @@
     'prefix': 'this'
     'body': '<?php echo $this->__(\'$0\'); ?>'
 
+  'Magento: Create Block':
+    'prefix': 'createBlock'
+    'body': '<?php echo $this->getLayout()->createBlock(\'${1:newsletter/subscribe}\')->setTemplate(\'${2:newsletter/subscribe.phtml}\')->toHtml(); ?>$3'
+
+  'Magento: Create CMS Block':
+    'prefix': 'createBlockCms'
+    'body': '<?php echo $this->getLayout()->createBlock(\'cms/block\')->setBlockId(\'${1:companion_cube}\')->toHtml(); ?>$2'
+
+  'Magento: Create (Conditional) CMS Block':
+    'prefix': 'createBlockCmsConditional'
+    'body': '<?php if (Mage::getModel(\'cms/block\')->load(\'${1:companion_cube}\')->getIsActive()): ?>\n\t<?php echo $this->getLayout()->createBlock(\'cms/block\')->setBlockId(\'${1:companion_cube}\')->toHtml(); ?>\n<?php endif; ?>$2'
+
   'Magento: Get Current URL':
     'prefix': 'getCurrentUrl'
     'body': '<?php echo Mage::helper(\'core/url\')->getCurrentUrl(); ?>'
