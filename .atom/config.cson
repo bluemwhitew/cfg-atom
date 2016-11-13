@@ -5,6 +5,8 @@
     invisibles:
       cr: false
       eol: false
+    preferredLineLength: 120
+    scrollPastEnd: true
     showIndentGuide: false
     showInvisibles: true
     showLineNumbers: true
